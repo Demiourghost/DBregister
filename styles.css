@@ -1,0 +1,195 @@
+* {
+    color: #a68ee7;
+    margin: 0px;
+    font-size: 20px;
+    font-family: sans-serif;}
+	body {background-color: #372c57;}
+
+/* Para WebKit (Chrome, Safari, Edge) */
+::-webkit-scrollbar {width: 12px;}
+::-webkit-scrollbar-track {background: #372c57;}
+::-webkit-scrollbar-thumb {background-color: #a68ee7;}
+
+
+/* barra de busqueda --------------------------------------------------------------------------------------------- */
+.buscador {
+    padding: 10px;
+    text-align: center;
+    background-color: #a68ee7;}
+	.barraC {
+		margin: auto;
+		border-radius: 20px;
+		width: -moz-fit-content;
+		width: fit-content;
+		padding-right: 5px;
+		color: #a68ee7;
+		outline: none;
+		background-color: #372c57;}
+		.barra {
+			padding: 5px;
+			margin: 0;
+			color: #fff;
+			border: none;
+			background-color: #2a243a;
+			border-top-right-radius: 20px;
+			border-bottom-right-radius: 20px;}
+			.barra::placeholder {color: #a68ee7;}
+			.barra:focus{
+				outline: none;
+				box-shadow: 0px 0px 8px #a68ee7;
+			}
+			.buscar {
+				margin: auto;
+				border: none;
+				color: #fff;
+				background-color: #372c57;
+				border-top-right-radius: 20px;
+				border-bottom-right-radius: 20px;}
+				.buscar:hover {cursor: pointer;}
+				.barra, .buscar {box-sizing: border-box;}
+				.agregar:focus{box-shadow: 0px 0px 5px #a68ee7;}
+				.editar:focus{box-shadow: 0px 0px 5px #a68ee7;}
+				.eliminar:focus{box-shadow: 0px 0px 5px #a68ee7;}
+				
+
+
+/* contenedores de formularios -------------------------------------------------------------------------------------- */
+.agregarC {
+    display: none;
+	width: -moz-fit-content;
+    width: fit-content;
+    padding: 10px;
+    margin: 20px auto;
+    margin-bottom: 0px;
+    text-align: center;
+    border-radius: 05px;
+    background-color: #a68ee7;}
+	.nombreA, .emailA, .idA {
+		margin-left: 5px;
+		width: 300px;
+		border: none;
+		background-color: #2a243a;}
+		.nombreA::placeholder, .emailA::placeholder, .idA::placeholder {color: #a68ee7;}
+	.materiaA, .semestreA {
+		border: none;
+		color: #a68ee7;
+		margin-left: 5px;
+		background-color: #372c57;}
+		option{color: #a68ee7;}
+		.enviarA{
+			margin-left: 5px;
+			color: #a68ee7;
+			border: none;
+			cursor: pointer;
+			background-color: #372c57;}
+			.enviarA:hover {background-color: #2a243a;}
+.editarC {
+    display: none;
+	width: -moz-fit-content;
+    width: fit-content;
+    padding: 10px;
+    margin: 20px auto;
+    margin-bottom: 0px;
+    text-align: center;
+    border-radius: 05px;
+    background-color: #a68ee7;}
+	.nombreE, .emailE {
+		margin-left: 5px;
+		width: 300px;
+		border: none;
+		background-color: #2a243a;}
+	.idE{
+		width: 150px;border: none;
+		background-color: #2a243a;
+	}
+	.idH{
+		width: 25px;
+		font-size: 22px; 
+		color: #a68ee7;
+		border-top-left-radius: 15px;
+		border-bottom-left-radius: 15px;
+		background-color: #372c57;}
+		.nombreE::placeholder, .emailE::placeholder, .idE::placeholder {color: #a68ee7;}
+	.materiaE, .semestreE {
+		border: none;
+		color: #a68ee7;
+		margin-left: 5px;
+		background-color: #372c57;}
+		option{color: #a68ee7;}
+
+.eliminarC {
+    display: none;
+	width: -moz-fit-content;
+    width: fit-content;
+    padding: 10px;
+    margin: 20px auto;
+    margin-bottom: 0px;
+    text-align: center;
+    border-radius: 05px;
+    background-color: #a68ee7;}
+	.idC{
+		width: 150px;border: none;
+		background-color: #2a243a;}
+		.idC::placeholder {color: #a68ee7;}
+		.btn{
+			margin-left: 5px;
+			color: #a68ee7;
+			border: none;
+			cursor: pointer;
+			background-color: #372c57;}
+			.btn:hover {background-color: #2a243a;}
+
+
+
+
+	
+
+
+.gridC {
+    gap: 10px;
+    width: 60%;
+    margin: 10px auto; /* Esto centrará horizontalmente */
+    padding: 10px;
+    display: grid;
+    grid-template-columns: auto 1fr 1fr auto auto;}
+	p {color: #ab93ee;}
+	.item {
+		padding: 5px;
+		border: 1px solid #a68ee7;}
+		.semestreI {text-align: center;}
+
+.inHover {
+    width: 100px;
+    color: #a68ee7;
+    border: none;
+    border-radius: 20px;
+    background-color: #372c57;
+}
+
+.inHover:hover {
+    background-color: #2a243a;
+    cursor: pointer;
+}
+
+.hash {
+    width: auto;
+    font-size: 22px;
+    margin-left: 4px;
+    padding-right: 0;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.hash:hover {
+    cursor: default;
+    background-color: #372c57;
+}
+
+@media print {
+    .gridC {
+        width: 95%;
+    }
+    .contenedor {
+        display: none;
+    }
+}

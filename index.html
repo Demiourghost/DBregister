@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Codigo</title>
+</head>
+<body>
+    <div class="buscador">
+        <div class="barraC">
+            <input type="submit" name="inHash" id="inHash" class="inHover hash" value="#">
+            <input type="text" name="inBuscar" id="inBuscar" class="barra" placeholder="Buscar" autocomplete="off" oninput="this.value = this.value.replace(/[^0-9]/g, '');">
+            <input type="submit" name="inAgregar" id="inAgregar" class="inHover agregar" value="Agregar">
+            <input type="submit" name="inEditar" id="inEditar" class="inHover editar" value="Editar">
+            <input type="submit" name="inEliminar" id="inEliminar" class="inHover eliminar" value="Eliminar">
+        </div>
+    </div>
+
+
+    <div class="agregarC">
+        <input class="nombreA" type="text" id="nombre" placeholder="Nombre completo" name="nombre" autocomplete="off">
+        <input class="emailA" type="text" id="email" placeholder="Ingresar email" name="email" autocomplete="off">
+        <select class="materiaA" name="materia" id="materia" title="Materias" autocomplete="off">
+            <option value="Fisica">Fisica</option>
+            <option value="Quimica">Quimica</option>
+            <option value="Matematicas">Matematicas</option>
+            <option value="Programacion">Programacion</option>
+            <option value="Ingles">Ingles</option>
+            <option value="Biologia">Biologia</option>
+        </select>
+        <select class="semestreA" name="semestre" id="semestre" title="semestres" autocomplete="off">
+            <option value="1">s.1</option>
+            <option value="2">s.2</option>
+            <option value="3">s.3</option>
+            <option value="4">s.4</option>
+            <option value="5">s.5</option>
+            <option value="6">s.6</option>
+            <option value="7">s.7</option>
+            <option value="8">s.8</option>
+            <option value="9">s.9</option>
+            <option value="10">s.10</option>
+            <option value="11">s.11</option>
+            <option value="12">s.12</option>
+        </select>
+        <input type="submit" class="btn btnA" value="Agregar">
+        <input type="submit" class="btn cancelarA" value="Cancelar">
+    </div>
+
+
+
+    <div class="editarC">
+        <div class="idH">#</div>
+        <input class="idE" type="text" placeholder="ID a editar" autocomplete="off" oninput="this.value = this.value.replace(/[^0-9]/g, '');">
+        <input class="nombreE" type="text" id="nombre" placeholder="Nombre completo" name="nombre" autocomplete="off">
+        <input class="emailE" type="text" id="email" placeholder="Ingresar email" name="email" autocomplete="off">
+        <select class="materiaE" name="materia" id="materia" title="Materias" autocomplete="off">
+            <option value="Fisica">Fisica</option>
+            <option value="Quimica">Quimica</option>
+            <option value="Matematicas">Matematicas</option>
+            <option value="Programacion">Programacion</option>
+            <option value="Ingles">Ingles</option>
+            <option value="Biologia">Biologia</option>
+        </select>
+        <select class="semestreE" name="semestre" id="semestre" title="semestres" autocomplete="off">
+            <option value="1">s.1</option>
+            <option value="2">s.2</option>
+            <option value="3">s.3</option>
+            <option value="4">s.4</option>
+            <option value="5">s.5</option>
+            <option value="6">s.6</option>
+            <option value="7">s.7</option>
+            <option value="8">s.8</option>
+            <option value="9">s.9</option>
+            <option value="10">s.10</option>
+            <option value="11">s.11</option>
+            <option value="12">s.12</option>
+        </select>
+        <input type="submit" class="btn btnE" value="Aceptar">
+        <input type="submit" class="btn cancelarE" value="Cancelar">
+    </div>
+
+
+    <div class="eliminarC">
+        <div class="idH">#</div>
+        <input type="text" class="idC" placeholder="ID a eliminar" autocomplete="off" oninput="this.value = this.value.replace(/[^0-9]/g, '');">
+
+        <input type="submit" class="btn btnC" value="Eliminar">
+        <input type="submit" class="btn cancelarC" value="Cancelar">
+    </div>
+
+
+
+
+    <div class="gridC"></div>
+
+    <script type="text/javascript" src="scripts.js"></script>
+</body>
+</html>
